@@ -1,0 +1,17 @@
+    <h3 class="mb-3 text-center">{{actualForecast.city_name}}</h3>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Temperature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let actualData of actualForecast.data">
+            <td>{{actualData.datetime}}</td>
+            <td>{{actualData.temp}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
